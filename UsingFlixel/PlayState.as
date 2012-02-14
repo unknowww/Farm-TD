@@ -139,7 +139,7 @@ package
 			for (var j:int = 0; j < 10; j++)
 			{
 				//check if any of the enemies have reached the goal, and if so -1 life and kill the enemy
-				if (FlxG.overlap(goal, enemyGroup.members[i]))
+				if (FlxG.overlap(goal, enemyGroup.members[j]))
 				{
 					life -= 1;
 					lifeStatus.text = "Life Left: " + life;
